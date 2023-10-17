@@ -141,7 +141,7 @@ MySQL adalah sistem manajemen basis data sumber terbuka yang cepat, multi-thread
 Peranan instalasi MySQL untuk web server Ubuntu adalah sebagai berikut:
 
 - MySQL memungkinkan Anda menyimpan dan mengambil data dari basis data relasional yang dapat diakses oleh aplikasi web Anda.
-- MySQL memberikan fleksibilitas dalam memilih mesin penyimpanan yang berbeda untuk tabel Anda, seperti InnoDB atau MyISAM, yang memiliki kelebihan dan kekurangan masing-masing1.
+- MySQL memberikan fleksibilitas dalam memilih mesin penyimpanan yang berbeda untuk tabel Anda, seperti InnoDB atau MyISAM, yang memiliki kelebihan dan kekurangan masing-masing.
 - MySQL mendukung fitur-fitur lanjutan seperti replikasi, partisi, transaksi, fungsi tersimpan, pemicu, dan lainnya.
 - MySQL dapat diintegrasikan dengan berbagai bahasa pemrograman web, seperti PHP, Python, Perl, Ruby, Java, dan lainnya
 
