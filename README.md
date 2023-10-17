@@ -1,4 +1,3 @@
-# fpos
 # Final Project OS Server & System Admin
 ## _Dokumentasi dari instalasi_
 - Nama  : Muh Fiki Saefulloh
@@ -20,13 +19,14 @@ Beberapa yang saya siapkan sebelum memulai pembuatan web server, saya membutuhka
 
 
 ## Report Update
-12 September 2023   - Menentukan Jenis Layanan Apa Yang Hendak Di buat
-15 September 2023   - Mulai Melakukan Instalasi Ubuntu Server
-30 September 2023   - Mengistall FTP
-1 Oktober 2023      - Menginstall Apache2
-2 Oktober 2023      - PHP versi 8
-16 Oktober 2023     - Membuat Repository Github
-17 Oktober 2023     - Mengisi Repository Github
+- 12 September 2023   - Menentukan Jenis Layanan Apa Yang Hendak Di buat
+- 15 September 2023   - Mulai Melakukan Instalasi Ubuntu Server
+- 30 September 2023   - Mengistall FTP
+- 1 Oktober 2023      - Menginstall Apache2
+- 2 Oktober 2023      - Mengistall PHP versi 8
+- 16 Oktober 2023     - Membuat Repository Github
+- 17 Oktober 2023     - Menginstall MySql
+- 17 Oktober 2023     - Mengisi Repository Github
 
 #### Menginstall FTP
 FTP adalah protokol komunikasi standar yang digunakan untuk mentransfer dari berkas komputer dari sebuah peladen ke sebuah klien pada jaringan komputer.
@@ -110,10 +110,10 @@ Lalu setelah mengecek menggunakan prompt lalu buka brwoser lalu ketikkan ip ubun
 PHP adalah bahasa skrip yang umum digunakan untuk pengembangan web, karena dapat menyisipkan kode PHP ke dalam HTML. PHP juga dapat berinteraksi dengan server back-end atau database, seperti MySQL atau PostgreSQL. Untuk menjalankan skrip PHP di Ubuntu server, Anda membutuhkan interpreter PHP dan web server, seperti Apache2.
 
 Peranan PHP di web server adalah sebagai berikut:
-PHP dapat menghasilkan konten HTML yang bervariasi sesuai dengan permintaan pengguna, waktu, atau data lainnya1.
-PHP dapat berinteraksi dengan database untuk menyimpan, mengambil, atau memanipulasi data.
-PHP dapat mengontrol akses pengguna, mengirim dan menerima cookie, dan mengenkripsi data.
-PHP dapat mengeksekusi kode di sisi server, sehingga tidak membebani browser pengguna
+- PHP dapat menghasilkan konten HTML yang bervariasi sesuai dengan permintaan pengguna, waktu, atau data lainnya1.
+- PHP dapat berinteraksi dengan database untuk menyimpan, mengambil, atau memanipulasi data.
+- PHP dapat mengontrol akses pengguna, mengirim dan menerima cookie, dan mengenkripsi data.
+- PHP dapat mengeksekusi kode di sisi server, sehingga tidak membebani browser pengguna
 
 berikut langkah yang digunakan  untuk mengistal PHP8.0 dengan Apache:
 
@@ -133,6 +133,28 @@ lalu restart apache2 dengan perintah
 
 ```sh
 sudo systemctl restart apache2
+```
+
+## Instalasi MySql
+MySQL adalah sistem manajemen basis data sumber terbuka yang cepat, multi-threaded, multi-pengguna, dan tangguh. Ini dimaksudkan untuk sistem produksi yang kritis, berbeban berat, dan perangkat lunak yang dipasang secara massal1. MySQL menggunakan model relasional dan Structured Query Language (SQL) untuk mengelola datanya.
+
+Peranan instalasi MySQL untuk web server Ubuntu adalah sebagai berikut:
+
+- MySQL memungkinkan Anda menyimpan dan mengambil data dari basis data relasional yang dapat diakses oleh aplikasi web Anda.
+- MySQL memberikan fleksibilitas dalam memilih mesin penyimpanan yang berbeda untuk tabel Anda, seperti InnoDB atau MyISAM, yang memiliki kelebihan dan kekurangan masing-masing1.
+- MySQL mendukung fitur-fitur lanjutan seperti replikasi, partisi, transaksi, fungsi tersimpan, pemicu, dan lainnya1.
+- MySQL dapat diintegrasikan dengan berbagai bahasa pemrograman web, seperti PHP, Python, Perl, Ruby, Java, dan lainnya
+
+Lalukan update repository terlebih dahulu dengan perintah :
+
+```sh
+sudo apt-get update
+```
+
+lalu masukkan perintah dibawah untuk mengistall MySql
+
+```sh
+sudo apt install mysql-server
 ```
 
 
