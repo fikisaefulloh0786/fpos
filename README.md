@@ -26,7 +26,7 @@ Beberapa yang saya siapkan sebelum memulai pembuatan web server, saya membutuhka
 1 Oktober 2023      - Menginstall Apache2
 2 Oktober 2023      - PHP versi 8
 16 Oktober 2023     - Membuat Repository Github
-17 Oktober          - Mengisi Repository Github
+17 Oktober 2023     - Mengisi Repository Github
 
 #### Menginstall FTP
 FTP adalah protokol komunikasi standar yang digunakan untuk mentransfer dari berkas komputer dari sebuah peladen ke sebuah klien pada jaringan komputer.
