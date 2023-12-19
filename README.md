@@ -16,6 +16,7 @@ Beberapa yang saya siapkan sebelum memulai pembuatan web server, saya membutuhka
 - [Oracle VM 6.1](https://www.virtualbox.org/wiki/Download_Old_Builds_6_1) - Virtual Mechine
 - [iso ubuntu ](https://ubuntu.com/download/server) - Ubuntu Server 20.04.6
 - [Master FileZilla](https://filezilla-project.org/download.php?type=client) - FileZilla
+- [web html & asset ](https://drive.google.com/drive/folders/1jmLmKg5tDMq5vw9jMSFnQsZJo14XOnDp?usp=sharing) - web html & asset
 
 
 ## Report Update
@@ -27,6 +28,10 @@ Beberapa yang saya siapkan sebelum memulai pembuatan web server, saya membutuhka
 - 16 Oktober 2023     - Membuat Repository Github
 - 17 Oktober 2023     - Menginstall MySql
 - 17 Oktober 2023     - Mengisi Repository Github
+- 25 Oktober 2023     - Mencoba layanan 1
+- 5 November 2023     - Mencoba memeriksa bug
+- 3 Desember 2023     - Mencoba membuat web
+- 3 Desember 2023     - Mencoba integrasi web server
 
 #### Menginstall FTP
 FTP adalah protokol komunikasi standar yang digunakan untuk mentransfer dari berkas komputer dari sebuah peladen ke sebuah klien pada jaringan komputer.
@@ -157,7 +162,22 @@ lalu masukkan perintah dibawah untuk mengistall MySql
 sudo apt install mysql-server
 ```
 
+## Langkah Mengirim File Menggunakan FileZilla dan Instalasi file HTML
+- buka apliasi file zila pada windows anda
+- masukkaan Hostname = IP ubuntu server, hostname = hostname ubuntu server, password = password ubuntu server
+- lalu klik Quickconnect
+- jika terdapat error tidak bisa terhubung pastikan port yang dituju dapat diakses
+```sh
+chmod 777 /var/www/html/
+```
+- salah satunya dengan menjalankan perintah diatas, karena lokasi yang hendak dituju adalah direktori var => www => html.
+- lalu masukkan file .html beserta assetnya di dalam directory tersebut dengan cara drag and drop saja ke direktory tersebut.
+- dan langkah terakhir, masukkan ip ubuntu server di browser anda, dan jika insstalasi anda benar, maka file html anda akan muncul dibrowser anda.
 
+![Screenshot 2023-12-20 014611](https://github.com/fikisaefulloh0786/fpos/assets/144602133/421e6eb0-dd36-46ff-8d19-0d9794bb7833)
+- contoh tampilan pada website.
+
+## Sekian dan Terima kasih :)
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
